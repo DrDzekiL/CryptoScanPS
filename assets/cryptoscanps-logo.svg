@@ -1,0 +1,39 @@
+<svg width="320" height="160" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="320" height="160" rx="18" fill="#050816"/>
+  <rect x="8" y="8" width="304" height="144" rx="14" fill="#0B1020" stroke="#1F2937" stroke-width="2"/>
+
+  <!-- left: terminal / PowerShell prompt -->
+  <rect x="20" y="28" width="170" height="104" rx="10" fill="#020617" stroke="#111827" stroke-width="1.5"/>
+  <text x="32" y="58" font-family="Consolas, monospace" font-size="18" fill="#38BDF8">&gt;_</text>
+  <text x="32" y="84" font-family="Consolas, monospace" font-size="13" fill="#9CA3AF">
+    CryptoScanPS.ps1
+  </text>
+  <text x="32" y="106" font-family="Consolas, monospace" font-size="11" fill="#4B5563">
+    scanning markets...
+  </text>
+
+  <!-- right: simple candlestick -->
+  <line x1="240" y1="36" x2="240" y2="124" stroke="#4B5563" stroke-width="2" stroke-dasharray="4 5"/>
+
+  <!-- bullish candle -->
+  <line x1="250" y1="46" x2="250" y2="122" stroke="#22C55E" stroke-width="3"/>
+  <rect x="238" y="70" width="24" height="40" rx="3" fill="#22C55E"/>
+
+  <!-- second smaller candle -->
+  <line x1="285" y1="60" x2="285" y2="132" stroke="#F97316" stroke-width="3"/>
+  <rect x="273" y="86" width="24" height="32" rx="3" fill="#F97316"/>
+
+  <!-- title text -->
+  <text x="22" y="26" font-family="Segoe UI, system-ui, -apple-system" font-size="12" fill="#6B7280">
+    Minimalistic Crypto Scanner · PowerShell
+  </text>
+
+  <!-- bottom label -->
+  <text x="200" y="148" font-family="Segoe UI, system-ui" font-size="11" fill="#9CA3AF" text-anchor="end">
+    open, honest, modular
+  </text>
+  <text x="302" y="148" font-family="Consolas, monospace" font-size="11" fill="#38BDF8" text-anchor="end">
+    PS · JSON · logs
+  </text>
+</svg>
