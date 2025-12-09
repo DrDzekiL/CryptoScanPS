@@ -5,7 +5,7 @@
 <h1 align="center">CryptoScanPS</h1>
 
 <p align="center">
-  Minimalistic PowerShell tool for scanning the crypto market — part of my personal trading / AI stack.
+  Minimalistic PowerShell crypto market scanner — part of my personal trading / AI stack.
 </p>
 
 <p align="center">
@@ -17,6 +17,21 @@
   </a>
   <img src="https://img.shields.io/badge/status-experimental-orange?style=for-the-badge" alt="Status: experimental">
 </p>
+
+---
+
+## ⚡ What It Does
+
+- Loads a clean, human-readable `config.json`
+- Pulls data from a public exchange endpoint (demo mode)
+- Filters symbols by volume
+- Logs every run (because logs = truth)
+- Outputs clean JSON
+- Uses modular PowerShell design:
+  - `http.psm1` — requests
+  - `parser.psm1` — shaping data
+  - `utils.psm1` — helpers
+
 
 
 ---
