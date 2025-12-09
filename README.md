@@ -1,120 +1,28 @@
-# CryptoScanPS
-# CryptoScanPS  
-A minimalistic PowerShell tool for scanning the crypto market.  
-Designed as part of my personal trading & AI-orchestration stack.  
-Open, honest, modular.
+CryptoScanPS is a lightweight PowerShell tool for scanning the crypto market.
+Part of my personal trading stack — where every tool is built for a real purpose, not for show.
 
----
+This project follows one principle:
 
-## 🔹 What It Is (and Why It Exists)
+“Small tools. Real results. Zero bullshit.”
 
-I’m building my own local trading system and AI-orchestrator.  
-My philosophy: move in small, honest steps — tool by tool, brick by brick.
+⚡ What It Does
 
-CryptoScanPS is the first brick.
+Loads a clean, human-readable config.json
 
-It’s a lightweight market scanner that reads a JSON config, sends API requests, logs events, and returns clean structured output.
+Pulls data from a public exchange endpoint (demo mode)
 
-No magic.  
-No unnecessary complexity.  
-Only what actually works.
+Filters symbols by volume
 
----
+Logs every run (because logs = truth)
 
-## 🔹 Features (v1.0)
+Outputs clean JSON
 
-- Reads `config.json`
-- REST API requests to an exchange (demo implementation using public endpoints)
-- Volume-based filtering
-- Text-file logging
-- Clean JSON output
-- Modular architecture:
-  - `http.psm1`
-  - `parser.psm1`
-  - `utils.psm1`
-- Easy to extend
+Uses modular PowerShell design:
 
----
+http.psm1 — requests
 
-## 🔹 Example run
+parser.psm1 — shaping data
 
-```powershell
-.\CryptoScan.ps1 -Config .\config.json
+utils.psm1 — helpers
 
-
-
-**Минималистичный PowerShell-инструмент для сканирования крипторынка.  
-Создан как часть моего личного торгового стека.  
-Открытый, честный, модульный.**
-
----
-
-### 🔹 Что это и зачем
-Я строю свою собственную систему трейдинга и ИИ-оркестрации на локальной машине.  
-Стараюсь двигаться маленькими, но честными шагами — инструмент за инструментом.
-
-**CryptoScanPS — первая кирпичная деталь.**  
-Это лёгкий сканер рынка, который читает JSON-конфиг, делает запросы, пишет чистые логи и отдаёт структурированный вывод.
-
-Без магии. Без лишней сложности. Только то, что работает.
-
----
-
-### 🔹 Возможности v1.0
-- чтение `config.json`  
-- запросы к API биржи (демо-реализация на публичном REST)  
-- фильтрация активов по объёму  
-- логирование в текстовый файл  
-- вывод результатов в JSON  
-- модульная структура (легко расширяется)
-
----
-
-### 🔹 Пример запуска
-
-```powershell
-.\CryptoScan.ps1 -Config .\config.json
-```
-
----
-
-### 🔹 Пример структуры конфига
-
-```json
-{
-  "exchange": "demo",
-  "symbols": ["BTCUSDT", "ETHUSDT", "BNBUSDT"],
-  "minVolume": 5000000,
-  "interval": "1m",
-  "logPath": ".\\logs\\scan.log"
-}
-```
-
----
-
-### 🔹 Почему PowerShell?
-Потому что это:
-- мгновенный старт — ничего ставить не нужно (Windows)  
-- легко расширяется модулями  
-- идеально подходит для автоматизации и расписаний  
-- удивительно мощный инструмент, который часто недооценивают
-
----
-
-### 🔹 В планах (roadmap v1.1+)
-- Telegram-нотификации  
-- мульти-API (Binance / Bybit / Kucoin)  
-- быстрая визуализация в терминале  
-- интеграция с будущим “PulseAgent”  
-- режим фонового мониторинга (loop + sleep)
-
----
-
-### 🔹 Почему open-source?
-Потому что я хочу делиться реальными рабочими кирпичами своей системы.  
-Не “проекты ради проектов”, а тем, что действительно использую.
-
----
-
-✔️ Хочешь посмотреть, как это работает — смотри папку `/samples`.  
-✔️ Хочешь предложить идею — открывай Issue.
+No magic. No fragile wrappers. Just a reliable scanner.
