@@ -1,4 +1,48 @@
 # CryptoScanPS
+# CryptoScanPS  
+A minimalistic PowerShell tool for scanning the crypto market.  
+Designed as part of my personal trading & AI-orchestration stack.  
+Open, honest, modular.
+
+---
+
+## 🔹 What It Is (and Why It Exists)
+
+I’m building my own local trading system and AI-orchestrator.  
+My philosophy: move in small, honest steps — tool by tool, brick by brick.
+
+CryptoScanPS is the first brick.
+
+It’s a lightweight market scanner that reads a JSON config, sends API requests, logs events, and returns clean structured output.
+
+No magic.  
+No unnecessary complexity.  
+Only what actually works.
+
+---
+
+## 🔹 Features (v1.0)
+
+- Reads `config.json`
+- REST API requests to an exchange (demo implementation using public endpoints)
+- Volume-based filtering
+- Text-file logging
+- Clean JSON output
+- Modular architecture:
+  - `http.psm1`
+  - `parser.psm1`
+  - `utils.psm1`
+- Easy to extend
+
+---
+
+## 🔹 Example run
+
+```powershell
+.\CryptoScan.ps1 -Config .\config.json
+
+
+
 **Минималистичный PowerShell-инструмент для сканирования крипторынка.  
 Создан как часть моего личного торгового стека.  
 Открытый, честный, модульный.**
