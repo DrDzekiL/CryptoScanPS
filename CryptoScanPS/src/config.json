@@ -1,0 +1,11 @@
+{
+  "exchange": "demo",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "BNBUSDT"
+  ],
+  "minVolume": 5000000,
+  "interval": "1m",
+  "logPath": ".\\logs\\scan.log"
+}

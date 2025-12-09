@@ -1,0 +1,10 @@
+# Logs
+logs/
+*.log
+
+# VS Code
+.vscode/
+
+# PowerShell history / temp
+*.ps1.bak
+*.tmp

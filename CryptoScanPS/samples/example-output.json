@@ -1,0 +1,16 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "price": 43210.55,
+    "volume": 8450000,
+    "interval": "1m",
+    "timestampUtc": "2025-12-09T10:00:00Z"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "price": 2310.1,
+    "volume": 6200000,
+    "interval": "1m",
+    "timestampUtc": "2025-12-09T10:00:00Z"
+  }
+]
